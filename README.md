@@ -1,6 +1,6 @@
 # Privacy Policy for VirusTotal App Scanner
 
-**Last updated: April 29, 2026**
+**Last updated: May 6, 2026**
 
 JaffaCakes118 ("we", "us", or "our") operates the VirusTotal App Scanner mobile application (the "Service").
 
@@ -30,11 +30,13 @@ We use Google Firebase to enhance the Service:
 * **Firebase Analytics:** We collect anonymous usage data to understand how the app is used.
 * **Firebase Crashlytics:** We collect anonymous crash reports to help us fix bugs and improve stability.
 
-## 2. Permissions
+## 2. Permissions and Background Processing
 
 The Service requires the following permissions to function:
-* **INTERNET:** Required to communicate with VirusTotal and Firebase services.
-* **QUERY_ALL_PACKAGES:** Required to list the applications installed on your device so they can be selected for scanning.
+* `INTERNET`: Required to communicate with VirusTotal and Firebase services.
+* `QUERY_ALL_PACKAGES`: Required to list the applications installed on your device so they can be selected for scanning.
+* `POST_NOTIFICATIONS`: Required to show you the progress and results of active scans.
+* `FOREGROUND_SERVICE` & `FOREGROUND_SERVICE_DATA_SYNC`: These allow the app to continue scanning your apps even if you move the app to the background or lock your screen. This ensures that large scan queues are completed reliably.
 
 ## 3. Third-Party Services
 
