@@ -27,7 +27,7 @@ To use the Service, you are required to provide your own **VirusTotal API Key**.
 #### Firebase Data
 We use Google Firebase to enhance the Service:
 * **Firebase Authentication:** We use anonymous authentication to securely interact with backend services. No personal identity (like email or name) is required or collected for this.
-* **Firebase Analytics:** We collect anonymous usage data to understand how the app is used.
+* **Firebase Analytics:** We collect anonymous usage data (including file hashes) to understand app performance and scanning trends.
 * **Firebase Crashlytics:** We collect anonymous crash reports to help us fix bugs and improve stability.
 
 ## 2. Permissions and Background Processing
